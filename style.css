@@ -39,4 +39,24 @@ main .logo h1 {
 main .logo h2 {
   color: #848EAD;
   font-size: 13px;
+}
+main .container {
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+  border-radius: 8px;
+  margin: 50% 10% 0 10%;
+}
+main .container .innertop {
+  margin: 0% 10%;
+  padding: 10% 0;
+}
+main .container .innertop h2 {
+  font-size: 12px;
+  font-weight: 800;
+  color: #848EAD;
+  text-align: center;
+}
+main .container .innertop input[type=range] {
+  width: 100%;
+  margin: 10% 0;
 }/*# sourceMappingURL=style.css.map */
