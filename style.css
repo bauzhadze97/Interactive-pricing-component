@@ -3,4 +3,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Manrope";
+  font-weight: 600;
+  background-image: url(./images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-color: #FEFEFE;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  background-image: url(./images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  background-position: center 57px;
+}
+main .logo {
+  margin: 25% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .logo h1 {
+  color: #293356;
+  font-weight: 800;
+  font-size: 20px;
+}
+main .logo h2 {
+  color: #848EAD;
+  font-size: 13px;
 }/*# sourceMappingURL=style.css.map */
