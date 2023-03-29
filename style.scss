@@ -41,7 +41,7 @@ main {
         background: #FFFFFF;
         box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
         border-radius: 8px;
-        margin: 50% 10% 0 10%;
+        margin: 20vh 10vw 0 10vw;
         & .innertop{
             margin: 0% 10%;
             padding: 10% 0;
@@ -51,10 +51,29 @@ main {
                 color: #848EAD;
                 text-align: center;
             }
-            & input[type=range]{
-                width: 100%;
-                margin: 10% 0;
+            & .slider{
+               width: 100%;
+               margin: 10% 0;
+            }
+            & .price{
+                color: #293356;
+                font-size: 32px;
+                font-weight: 800;
+                & #month{
+                    color: #848EAD;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+            }
+            & .billing{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                & h2{
+                    color: #848EAD;
+                    font-size: 12px;
+                }
             }
         }
     }
-}

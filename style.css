@@ -44,7 +44,7 @@ main .container {
   background: #FFFFFF;
   box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
   border-radius: 8px;
-  margin: 50% 10% 0 10%;
+  margin: 20vh 10vw 0 10vw;
 }
 main .container .innertop {
   margin: 0% 10%;
@@ -56,7 +56,26 @@ main .container .innertop h2 {
   color: #848EAD;
   text-align: center;
 }
-main .container .innertop input[type=range] {
+main .container .innertop .slider {
   width: 100%;
   margin: 10% 0;
+}
+main .container .innertop .price {
+  color: #293356;
+  font-size: 32px;
+  font-weight: 800;
+}
+main .container .innertop .price #month {
+  color: #848EAD;
+  font-size: 14px;
+  font-weight: 600;
+}
+main .container .billing {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main .container .billing h2 {
+  color: #848EAD;
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
