@@ -1,9 +1,11 @@
-const toggleSwitch = document.getElementById('toggleSwitch');
+const togglebutton = document.querySelector('.togglebg');
 
-toggleSwitch.addEventListener('click', function() {
-  if (toggleSwitch.checked) {
-     console.log('Switch is on');
-  } else {
-    console.log('Switch is off');
-  }
+//add click on togglebutton 
+togglebutton.addEventListener('click', () => {
+    //toggle button is clicked
+    if (togglebutton.classList.contains('active')) {
+        togglebutton.classList.remove('active');
+    } else {
+        togglebutton.classList.add('active');
+    }
 });
