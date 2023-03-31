@@ -14,6 +14,7 @@ body{
     background-color: #FEFEFE;
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 }
 main {
     width: 100%;
@@ -41,7 +42,7 @@ main {
         background: #FFFFFF;
         box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
         border-radius: 8px;
-        margin: 20vh 10vw 0 10vw;
+        margin: 32px 24px;
         & .innertop{
             margin: 0% 10%;
             padding: 10% 0;
@@ -86,11 +87,6 @@ main {
                 color: #293356;
                 font-size: 32px;
                 font-weight: 800;
-                & #month{
-                    color: #848EAD;
-                    font-size: 14px;
-                    font-weight: 600;
-                }
             }
             }
             & .billing{
@@ -157,3 +153,45 @@ main {
             }
         }
     }
+@media screen and (min-width:1440px){
+    body{
+        background-color: #F9FAFF;
+    }
+    main {
+        & .logo{
+            margin: 105px 0 0 0;
+        }
+        & .container{
+            max-width: 540px;
+            margin: 200px 450px 140px 450px;
+            & .innertop{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                align-items: center;
+                padding: 40px 0 0 0;
+                & h2{
+                    font-size: 14px;
+                    text-align: left;
+                }
+                & .slider{
+                    grid-area: 2 / 1 / 3 / 6;
+                    margin: 24px 0 40px 0;
+                }
+                & .price{
+                    font-size: 40px;
+                }
+            }
+            & .bottomcontainer{
+                display: flex;
+                justify-content: flex-end;
+                 align-items: center;
+                & .packagetext{
+                   text-align: center;
+                }
+            }
+        }
+    }
+}
