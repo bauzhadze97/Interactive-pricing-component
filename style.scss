@@ -130,5 +130,30 @@ main {
                  }   
                 
             }
+            & .line{
+                background: #ECF0FB;
+                height: 1px;
+                margin: 38px 0 24px 0;
+            }
+            & .packagetext{
+                text-align: center;
+                font-weight: 600;
+                font-size: 12px;
+                color: #848EAD;
+                & img{
+                    margin-right: 16px;
+                }
+            }
+            & button{
+                padding: 12px 46px;
+                background: #293356;
+                border-radius: 20.5px;
+                border: none;
+                font-weight: 800;
+                font-size: 12px;
+                color: #BECDFF;
+                margin: 33px 67px;
+                cursor: pointer;
+            }
         }
     }
