@@ -28,8 +28,8 @@ slider.addEventListener('input', function() {
 togglebutton.addEventListener('click', function() {
    togglebutton.classList.toggle('active');
  
-   let price = 0;
    const sliderValue = parseInt(slider.value);
+   let price = 0;
    switch (sliderValue) {
      case 1:
        price = 18;
@@ -47,10 +47,37 @@ togglebutton.addEventListener('click', function() {
        price = 90;
        break;
    }
- 
+
    if (togglebutton.classList.contains('active')) {
      getPrice.textContent = '$' + (price * 12 * 0.75).toFixed(2);
    } else {
      getPrice.textContent = '$' + price.toFixed(2);
    }
  });
+
+slider.addEventListener('input', function() {
+  const sliderValue = parseInt(slider.value);
+  let price = 0;
+  if (sliderValue === 1) {
+    price = 18;
+    pageView.textContent = '20K PAGEVIEWS';
+  } else if (sliderValue === 2) {
+    price = 36;
+    pageView.textContent = '40K PAGEVIEWS';
+  } else if (sliderValue === 3) {
+    price = 54;
+    pageView.textContent = '60K PAGEVIEWS';
+  } else if (sliderValue === 4) {
+    price = 72;
+    pageView.textContent = '80K PAGEVIEWS';
+  } else if (sliderValue === 5) {
+    price = 90;
+    pageView.textContent = '100K PAGEVIEWS';
+  }
+
+  if (togglebutton.classList.contains('active')) {
+    getPrice.textContent = '$' + (price * 12 * 0.75).toFixed(2);
+  } else {
+    getPrice.textContent = '$' + price.toFixed(2);
+  }
+});
